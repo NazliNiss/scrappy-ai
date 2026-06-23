@@ -1,8 +1,8 @@
 export const SESSION_COOKIE = 'scrappy_session';
 const SESSION_DURATION_MS = 7 * 24 * 60 * 60 * 1000;
 
-const DEFAULT_AUTH_USERNAME = 'admin';
-const DEFAULT_AUTH_PASSWORD = '1989';
+const DEFAULT_AUTH_USERNAME = '****';
+const DEFAULT_AUTH_PASSWORD = '****';
 const DEFAULT_AUTH_SECRET = 'scrappy-local-dev-secret';
 
 function getAuthSecret() {
