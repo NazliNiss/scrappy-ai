@@ -1,0 +1,144 @@
+.progressCard {
+  margin-bottom: 3rem;
+  padding: 2rem;
+}
+
+.progressHeader {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.progressHeader h3 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.spinner {
+  color: var(--primary);
+  animation: spin 1s linear infinite;
+}
+
+.queueIcon {
+  color: #fbbf24;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.progressTrack {
+  width: 100%;
+  height: 10px;
+  border-radius: 999px;
+  background: var(--border-color);
+  overflow: hidden;
+}
+
+.progressFill {
+  height: 100%;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--primary), var(--primary-hover));
+  transition: width 0.4s ease;
+}
+
+.progressMeta {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.75rem;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+.progressMessage {
+  margin-top: 0.75rem;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+.progressHint {
+  margin-top: 1rem;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  padding: 0.75rem 1rem;
+  border-radius: var(--radius-md);
+  background: rgba(99, 102, 241, 0.08);
+  border: 1px solid rgba(99, 102, 241, 0.15);
+}
+
+/* Steps List Timeline Styles */
+.stepsList {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  margin: 1.75rem 0;
+  padding: 1.25rem;
+  border-radius: var(--radius-lg);
+  background: var(--surface-muted);
+  border: 1px solid var(--border-color);
+  text-align: left;
+}
+
+.stepRow {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  opacity: 0.45;
+  transition: opacity 0.3s ease;
+}
+
+.stepActive {
+  opacity: 1;
+}
+
+.stepCompleted {
+  opacity: 0.85;
+}
+
+.stepIndicator {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-top: 0.15rem;
+}
+
+.indicatorPending {
+  border: 2px solid var(--border-color);
+  background: transparent;
+}
+
+.indicatorActive {
+  background: var(--primary-glow);
+  color: var(--primary);
+}
+
+.indicatorCompleted {
+  background: var(--sentiment-pos-bg);
+  color: var(--sentiment-pos);
+}
+
+.stepInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  min-width: 0;
+}
+
+.stepLabel {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.stepDesc {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  line-height: 1.45;
+}
+
